@@ -1,0 +1,272 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-bg {
+    height: 650px;
+    background-image: url('../images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.hero-bg-layer {
+    background-color: rgba(149 124 124 / 67%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-tag-line {
+    width: 30%;
+    color: #f1f1f1;
+}
+
+.hero-tag-line p {
+    font-size: 54px;
+    padding-bottom: 4rem;
+}
+
+.pet-logo {
+    height: 64px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    padding: 14px;
+    margin-right: 35px;
+    -webkit-transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    transform: rotate(320deg);
+}
+
+.pet-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.pet-tiles {
+    width: 50%;
+    position: relative;
+}
+
+.pet-tiles img {
+    display: block;
+    width: 100%;
+}
+
+.pet-tiles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(149 124 124 / 67%)
+}
+
+.services-bg {
+    background-image: url('../images/services-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    position: relative;
+}
+
+.services-bg-layer {
+    background-color: rgba(149 124 124 / 67%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.services-text-container {
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.services-title {
+    color: #e9e4e4;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.services-list {
+    font-size: 30px;
+    color: #e9e4e4;
+    line-height: 5rem;
+    margin-left: 1rem;
+}
+
+.appointments-container {
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.appointments-bg {
+    background-color: rgba(193 193 193 / 67%);
+}
+
+.appointments-title {
+    color: #3c3c3c;
+    margin-top: 4rem;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.active-option {
+    background-color: #efaa5a;
+    border: none;
+    color: #4c4b4b;
+}
+
+.appointments-container .frequency {
+    width: 45%;
+    margin-right: 4rem;
+}
+
+.appointments-container .frequency-option {
+    border: 1px solid #fff;
+    padding: 4px;
+    background-color: #fff;
+}
+
+.appointments-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frequency-option a,
+.time-items a,
+.day-items a {
+    cursor: pointer;
+}
+
+.appointments-datepicker {
+    padding: 0.1rem;
+    background-color: #fff;
+}
+
+.dp__input {
+    border: none !important;
+}
+
+.services-container {
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-bg {
+        height: 322px;
+    }
+
+    .hero-tag-line {
+        width: 90%;
+        padding-top: 24px;
+    }
+
+    .hero-tag-line p {
+        font-size: 38px;
+        padding-bottom: 16px;
+    }
+
+    .services-container {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-tagline {
+        font-size: 34px;
+    }
+
+    .services-text-container {
+        width: 85%;
+    }
+
+    .services-bg-layer {
+        position: relative;
+    }
+
+    .services-bg {
+        width: 100%;
+        height: 325px;
+    }
+
+    .services-title {
+        font-size: 30px;
+        margin-left: 52px;
+    }
+
+    .services-list {
+        font-size: 21px;
+        line-height: 3rem;
+        margin-left: 5rem;
+    }
+
+    .appointments-container {
+        width: auto;
+    }
+
+    .appointments-bg {
+        padding-top: 0;
+    }
+
+    .appointments-title {
+        margin-top: 1rem;
+        font-size: 26px;
+    }
+
+    .appointments-container .frequency {
+        width: 45%;
+        margin-right: 1rem;
+    }
+
+    .appointment-white {
+        display: none;
+    }
+
+    .appointment-options {
+        padding-top: 26px;
+        margin-left: 5rem;
+    }
+
+    .appointment-services {
+        padding-top: 40px;
+    }
+
+    .dp__input {
+        border: none !important;
+        padding: 7px 35px !important;
+    }
+
+    .pet-logo {
+        height: 42px;
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 11px;
+        transform: rotate(320deg);
+    }
+}
